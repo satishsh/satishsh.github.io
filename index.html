@@ -1,1 +1,59 @@
-Hello World
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Satish Shende - Blog</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <style type="text/tailwindcss">
+        @layer base {
+            a {
+                @apply underline underline-offset-2 text-gray-200 transition-colors duration-300 hover:text-blue-400;
+            }
+        }
+    </style>
+    <script src="script.js"></script>
+</head>
+<body>
+<!-- Header -->
+<header class="bg-gray-900 shadow-lg sticky top-0 z-10">
+    <nav class="container mx-auto px-6 py-4">
+        <div class="flex justify-between items-center">
+            <div class="text-2xl font-bold text-blue-400">Satish Shende</div>
+            <div class="space-x-6">
+                <a href="about.html" class="text-gray-300 hover:text-blue-400">About</a>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<!-- Main Content -->
+<main class="container mx-auto px-6 py-12">
+    <section>
+        <p class="text-lg text-gray-300 max-w-2xl mx-auto mb-12 text-center">
+            Welcome to my blog. Here you will find my take on all sort of things mostly Computer science related. While
+            penning down these thoughts I haven't considered you as a reader. Maybe I have. I am not sure. Hence, I have
+            added Computer science meter to every post. Lowest 0 means no prior knowledge needed and Highest 5 means you
+            need specific knowledge of the domain. This is
+            <d-level level="0"></d-level>
+        </p>
+        <!-- Blog Posts List -->
+        <div class="space-y-8">
+            <!-- Sample Post -->
+            <div class="bg-gray-800 p-6 rounded-lg shadow-md">
+                <a href="posts/20250622_151500.html" class="text-2xl font-semibold text-blue-400 hover:underline">
+                    10 Things every software developer must master
+                </a>
+                <p class="text-gray-400 text-sm mt-2">June 22, 2025
+                    <d-level level="0"></d-level>
+                </p>
+
+            </div>
+
+        </div>
+    </section>
+</main>
+</body>
+</html>
